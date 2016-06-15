@@ -243,9 +243,9 @@ input {
   }
 }
 
-/* microposts */
+/* entries */
 
-.microposts {
+.entries {
   list-style: none;
   padding: 0;
   li {
@@ -256,7 +256,15 @@ input {
     margin-top: 5em;
     padding-top: 0;
   }
-  .content {
+  .content{
+    display: block;
+    margin-left: 60px;
+    img {
+      display: block;
+      padding: 5px 0;
+    }
+  }
+  .title{
     display: block;
     margin-left: 60px;
     img {
@@ -277,7 +285,11 @@ input {
 }
 
 aside {
-  textarea {
+  textarea#title {
+    height: 20px;
+    margin-bottom: 5px;
+  }
+  textarea#content{
     height: 100px;
     margin-bottom: 5px;
   }
