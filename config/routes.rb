@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
   get 'sessions/new'
-
+  get 'feed' => 'static_pages#feed'
   root 'static_pages#home'
   get 'signup' => 'users#new'
   resources :users do
