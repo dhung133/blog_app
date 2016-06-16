@@ -10,4 +10,13 @@
                                        data: { confirm: "You sure?" } %>
     <% end %>
   </span>
+
+  <div id="comments_<%= entry.id %>">
+    <% if entry.comments.any? %>
+      <%= render entry.comments, entry: entry %>
+    <%end%>
+  </div>
+  <% if logged_in? %>
+    <%= render 'shared/comment_form', entry: entry %>
+  <%end%>
 </li>
