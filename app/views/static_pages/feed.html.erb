@@ -1,0 +1,7 @@
+<div>
+  <h1>Feed</h1>
+  <%= render 'shared/feed' %>
+  <% if !logged_in? %>
+  <p>Do you like it? Join us now <%= link_to "Sign up now!", signup_path, class: "btn btn-lg btn-primary" %></p>
+  <% end %>
+</div>
